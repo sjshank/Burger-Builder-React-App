@@ -1,0 +1,9 @@
+.incredientsList{
+    text-align: left;
+}
+.buttonSection{
+    display: flex;
+    flex-flow: row;
+    text-align: center;
+    justify-content: center;
+}
