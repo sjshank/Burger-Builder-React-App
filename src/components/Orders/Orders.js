@@ -1,10 +1,9 @@
-import React, { useEffect, Component } from 'react';
+import React, { Component } from 'react';
 import Modal from '../../components/UI/Modal/Modal';
 import Spinner from '../../components/UI/Spinner/Spinner';
 import axios from "../../axios-order";
 import ErrorHandler from "../../hoc/ErrorHandler/ErrorHandler";
 import classes from './Orders.css';
-import { useAuth } from "../../context/auth";
 import { connect } from 'react-redux';
 import * as orderBurgerAction from "../../store/actions/index";
 

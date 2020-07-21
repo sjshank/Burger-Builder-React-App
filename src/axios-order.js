@@ -5,16 +5,16 @@ const instance = axios.create({
     baseURL: 'https://burgerbuilder-cfd3e.firebaseio.com/'
 });
 
-const successHandler = (response) => {
-    return response;
-};
+// const successHandler = (response) => {
+//     return response;
+// };
 
-const errorHandler = (error) => {
-    if(error){
-        console.log(error.message);
-    }
-    return Promise.reject({ ...error });
-};
+// const errorHandler = (error) => {
+//     if(error){
+//         console.log(error.message);
+//     }
+//     return Promise.reject({ ...error });
+// };
 
 
 /*instance.interceptors.request.use(

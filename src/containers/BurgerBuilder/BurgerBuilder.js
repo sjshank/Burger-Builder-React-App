@@ -12,12 +12,12 @@ import { connect } from "react-redux";
 // import * as actionTypes from "../../store/actions";
 import * as burgerBuilderActions from "../../store/actions/index";
 
-const INCREDIENTS_PRICE = {
-    'salad': 2,
-    'meat': 10,
-    'cheese': 0.5,
-    'bacon': 3.5
-}
+// const INCREDIENTS_PRICE = {
+//     'salad': 2,
+//     'meat': 10,
+//     'cheese': 0.5,
+//     'bacon': 3.5
+// }
 
 class BurgerBuilder extends Component {
 
@@ -105,7 +105,7 @@ class BurgerBuilder extends Component {
         for (const i in this.props.ings) {
             queryParams.push(i + "=" + this.props.ings[i]);
         }
-        queryParams.push('price' + "=" + this.props.finalPrice);
+        queryParams.push('price'.concat("=") + this.props.finalPrice);
         //params.push(this.id + "='" + this.value + "'");
         this.props.history.push({
             pathname: '/checkout',
